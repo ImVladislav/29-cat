@@ -96,6 +96,7 @@ html.w-mod-touch * {
   border-radius: 0;
   &:hover {
     transform: translate(0px, -6px);
+    transition-duration: 500ms;
   }
 }
 input.w-button {
