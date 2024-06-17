@@ -294,6 +294,21 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuLinks = document.querySelectorAll('.menu_link');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    if (this.getAttribute('href') === 'index.html#tokenomics') {
+                        event.preventDefault();
+                        document.querySelector('#block_welcome').scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
