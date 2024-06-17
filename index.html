@@ -48,6 +48,71 @@
 </head>
 
 <body class="body">
+    <style>
+        @keyframes up-down {
+            0% {
+                transform: translateY(0);
+            }
+    
+            50% {
+                transform: translateY(20px);
+                /* Вгору на 20px */
+            }
+    
+            100% {
+                transform: translateY(0);
+            }
+        }
+    
+        .image-3 {
+            animation: up-down 2s ease-in-out infinite;
+            /* z-index: -1; */
+            /* transform: translate(0px -6px); */
+            transform: rotateY(180deg);
+        }
+                .image-3:hover {
+            animation-play-state: paused;
+            /* Зупинка анімації при наведенні миші */
+        }
+    </style>
+    <style>
+        @keyframes scale-up-down {
+            0% {
+                transform: scale(1);
+            }
+    
+            50% {
+                transform: scale(1.2);
+                /* Збільшення до 1.2 разів */
+            }
+    
+            100% {
+                transform: scale(1);
+            }
+        }
+    
+        .logo_hero {
+            animation: scale-up-down 2s ease-in-out infinite;
+            z-index: 2;
+        }
+    
+        .logo_hero:hover {
+            animation-play-state: paused;
+            /* Зупинка анімації при наведенні миші */
+        }
+    </style>
+
+    <style>
+        .tokenomics_details-2 {
+            transition: transform 0.3s ease-in-out;
+            /* Додає плавний перехід */
+        }
+    
+        .tokenomics_details-2:hover {
+            transform: scale(1.1);
+            /* Збільшення на 10% при наведенні миші */
+        }
+    </style>
     <audio autoplay hidden loop>
         <!-- <source src="./audio.mp3" type="audio/mpeg"> -->
         Your browser does not support the audio tag.
@@ -88,10 +153,10 @@
         </div>
     </div>
     <div class="section_hero">
-        <div class="donkey_hero">
-          <img src="images/logo_hero.png" loading="lazy"
-                alt="" class="logo_hero"><img src="images/KATE.png" loading="lazy" alt=""
-                class="image-3" style="object-fit: cover;"></div>
+<div class="donkey_hero">
+    <img src="images/logo_hero.png" loading="lazy" alt="" class="logo_hero">
+    <img src="images/KATE.png" loading="lazy" alt="" class="image-3" style="object-fit: cover;">
+</div>
         <div class="block_socials">
             <div class="block_social_button">
                 <div class="social_shadow"></div>
